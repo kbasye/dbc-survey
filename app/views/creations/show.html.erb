@@ -1,0 +1,13 @@
+<h1><%= @creation.title %></h1>
+	
+	<ol>
+		<% @creation.questions.each do |question| %>
+			<li><%= question.body %></li>
+					<ul>
+						<% question.options.each do |option| %>
+						<li><%= option.content %></li>
+						<% end %>
+					</ul>
+		<% end %>
+	</ol>
+

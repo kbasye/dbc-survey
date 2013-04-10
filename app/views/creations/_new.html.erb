@@ -1,0 +1,12 @@
+ <h2>New Survey</h2>
+<%= form_for @creation do |f| %>
+	<%= f.text_field :title, :placeholder => "Survey Title" %><br>
+		
+		<ol>
+			<%= f.fields_for :questions do |builder| %>
+				<%= render "/questions/new_question", :builder => builder %>
+			<% end %>
+		</ol>
+
+	<%= f.submit "submit"%>
+<% end %>

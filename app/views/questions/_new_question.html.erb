@@ -1,0 +1,7 @@
+<li><%= builder.text_field :body, :placeholder => "Question" %><br>
+	<ul>
+		<%= builder.fields_for :options do |option| %>
+			<%= render "/options/new_option", :option => option %>
+		<% end %>
+	</ul>
+</li>

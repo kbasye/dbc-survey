@@ -1,0 +1,14 @@
+<h1>Hello, <%= @user.username %> </h1>
+
+
+
+<%= render '/creations/new' %>
+
+<h2>All Of Your Surveys</h2>
+	
+	<ol>
+		<% @user.creations.each do |creation| %>
+			<li><%= link_to creation.title, creation_path(creation.id) %></li>
+		<% end %>
+	</ol>
+
