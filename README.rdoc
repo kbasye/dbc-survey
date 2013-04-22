@@ -1,5 +1,10 @@
-== Setup Survey
+What: Rails Nested Forms Practice
 
-rake db:create
-rake db:migrate
-rake db:test:prepare
+When: DevBootcamp, Week 7
+
+Who: 1 pair
+
+Time: ~4 hours
+
+Status: Practice, Development
+
